@@ -4,11 +4,11 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.js",
+  "main": "dist/index.mjs",
+  "module": "dist/index.js",
   "author": "Nguyen Van Long",
+  "types": "dist/src/vue-round/index.d.ts",
   "license": "MIT",
-  "types": "./dist/env.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",

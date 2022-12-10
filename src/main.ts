@@ -1,9 +1,17 @@
 import { createApp } from 'vue';
-
-// import VueRoundSmooth from './vue-round';
-import VueRoundSmooth from '../dist';
-import '../dist/style.css';
+// import { createVueRoundSmooth } from './vue-round';
 
 import App from './App.vue';
 
-createApp(App).use(VueRoundSmooth).mount('#app');
+// const vueRound = createVueRoundSmooth();
+
+// import VueRoundSmooth from '../dist';
+// import * as ds from '../dist';
+
+// console.log(ds);
+
+// import '../dist/style.css';
+
+const app = createApp(App);
+// app.use(vueRound);
+app.mount('#app');

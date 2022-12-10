@@ -1,24 +1,28 @@
 <script setup lang="ts"></script>
 <template>
   <div class="mask">dfd</div>
-  <VueRoundSmooth :x="3" :y="3" class="color color1"> sdsds </VueRoundSmooth>
-  <VueRoundSmooth :x="12" :y="3" class="color"> sdsds </VueRoundSmooth>
-  <VueRoundSmooth :x="12" :y="3" class="color">
+  <VueRoundSmooth :x="3" :y="3" class="box box1"> sdsds </VueRoundSmooth>
+  <VueRoundSmooth :x="12" :y="3" class="box"> sdsds </VueRoundSmooth>
+  <VueRoundSmooth :x="12" :y="3" class="box">
     <div>Hello</div>
   </VueRoundSmooth>
 </template>
 <style>
-.color {
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
-  background: #d01257; /* So you can see it */
-  text-align: center;
-  color: bisque;
+  background: #d01257;
+  color: white;
   font-size: 2rem;
   width: 160px;
   height: 50px;
 }
 
-.color1 {
+.box1 {
   background: green;
+  width: 160px;
+  height: 160px;
 }
 </style>

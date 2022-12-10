@@ -1,9 +1,17 @@
 import VueRound from './VueRound.vue';
 
-const vueRoundSmooth = {
-  install(app: any) {
-    app.component('VueRoundSmooth', VueRound);
-  },
+type Options = {
+  componentName: string;
+} | null;
+
+const createVueRoundSmooth = (options?: Options) => {
+  const name: string = options?.componentName || 'VueRoundSmooth';
+
+  return {
+    install(app: any) {
+      app.component(name, VueRound);
+    },
+  };
 };
 
-export default vueRoundSmooth;
+export { createVueRoundSmooth, VueRound as VueRoundComponent };

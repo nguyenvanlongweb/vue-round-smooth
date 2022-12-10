@@ -1,4 +1,4 @@
-import { h, ref, reactive, watchEffect } from 'vue';
+import { h, ref, watchEffect } from 'vue';
 import round from './lib/attachPaintWorkletScript';
 import styles from './styles.module.css';
 
