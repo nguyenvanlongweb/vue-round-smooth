@@ -11,6 +11,7 @@ yarn add vue-round-smooth
 
 ```js
 import vueRoundSmooth from 'vue-round-smooth';
+import 'vue-round-smooth/style.css';
 
 app.use(vueRoundSmooth);
 ```
