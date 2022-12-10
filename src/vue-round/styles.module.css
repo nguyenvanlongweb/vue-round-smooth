@@ -1,0 +1,5 @@
+.mask {
+  /* --smooth-corners: v-bind(corner); */
+  mask-image: paint(smooth-corners);
+  -webkit-mask-image: paint(smooth-corners);
+}
