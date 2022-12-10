@@ -1,40 +1,54 @@
-# vue-round-smooth
-
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+# Installation
 
 ```sh
-yarn
+npm install vue-round-smooth
+yarn add vue-round-smooth
 ```
 
-### Compile and Hot-Reload for Development
+# Usage
 
-```sh
-yarn dev
+1.  Import package
+
+```js
+import vueRoundSmooth from 'vue-round-smooth';
+
+app.use(vueRoundSmooth);
 ```
 
-### Type-Check, Compile and Minify for Production
+2. Use in components
 
-```sh
-yarn build
+```html
+<script setup lang="ts"></script>
+<template>
+  <div class="mask">dfd</div>
+  <VueRoundSmooth :x="3" :y="3" class="color color1"> sdsds </VueRoundSmooth>
+  <VueRoundSmooth :x="12" :y="3" class="color"> sdsds </VueRoundSmooth>
+  <VueRoundSmooth :x="12" :y="3" class="color">
+    <div>Hello</div>
+  </VueRoundSmooth>
+</template>
+<style>
+  .color {
+    margin: 10px;
+    background: #d01257;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    width: 160px;
+    height: 50px;
+  }
+
+  .color1 {
+    background: green;
+  }
+</style>
 ```
+
+# Props
+
+| Name | Description |
+
+| Name |          Description          |
+| ---- | :---------------------------: |
+| x    | Horizontal axis bending index |
+| y    |      Axial bending index      |

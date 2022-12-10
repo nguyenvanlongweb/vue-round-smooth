@@ -4,7 +4,7 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/index.umd.mjs",
+  "main": "./dist/index.mjs",
   "module": "./dist/index.js",
   "author": "Nguyen Van Long",
   "license": "MIT",
